@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { isJsObject } from '@angular/core/src/change_detection/change_detection_util';
 
 const routes: Routes = [
   {
@@ -10,10 +11,6 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
   }
 ];
 
